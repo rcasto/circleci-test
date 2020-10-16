@@ -8,7 +8,7 @@ jobs:
       - run: echo "This is the build job"
   test:
     docker:
-        - image: circleci/node:lts
-      steps:
-        - checkout
-        - run: echo "This is the test job"
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      - run: echo "This is the test job"
